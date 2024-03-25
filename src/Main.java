@@ -16,7 +16,7 @@ public class Main {
         book.add(new Book("Mustafa Kemal ATATÜRK", "Nutuk", 1927, 658));
         book.add(new Book("Fyodor Dostoyevski", "Suç ve Ceza", 1866, 1255));
         book.add(new Book("Victor Hugo", "Sefiller", 1862, 1724));
-        book.add(new Book("Lev Tolstoy", "İnsan Ne ile Yaşar?", 1885, 112));
+        book.add(new Book("Lev Tolstoy", "Insan Ne ile Yaşar?", 1885, 112));
         book.add(new Book("Reşat Nuri Gültekin", "Acımak", 1928, 150));
 
         for (Book i : book.reversed()) {
@@ -24,18 +24,17 @@ public class Main {
         }
             chain();
 
-            TreeSet<Book> book2 = new TreeSet<>(new Comparator<Book>() {
-                @Override
-                public int compare(Book o1, Book o2) {
-
-                    return o1.getPage() - o2.getPage();
+        TreeSet<Book> book2 = new TreeSet<>(new Comparator<Book>() {
+            @Override
+            public int compare(Book o1, Book o2) {
+                return o1.getPage() - o2.getPage();
                 }
             });
 
             book2.add(new Book("Mustafa Kemal ATATÜRK", "Nutuk", 1927, 658));
             book2.add(new Book("Fyodor Dostoyevski", "Suç ve Ceza", 1866, 1255));
             book2.add(new Book("Victor Hugo", "Sefiller", 1862, 1724));
-            book2.add(new Book("Lev Tolstoy", "İnsan Ne ile Yaşar?", 1885, 112));
+            book2.add(new Book("Lev Tolstoy", "Insan Ne ile Yaşar?", 1885, 112));
             book2.add(new Book("Reşat Nuri Gültekin", "Acımak", 1928, 150));
 
             for (Book i : book2.reversed()) {
